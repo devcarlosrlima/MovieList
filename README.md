@@ -1,8 +1,100 @@
-# React + Vite
+# Projeto Movie List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Techs usadas no projeto
+- React js
+- API
+- Axios
+- Sass
+- JavaScript
 
-Currently, two official plugins are available:
+## Resumo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+MovieList criada com intuito de aperfeiçoar a técnica de consumo de API, foi utilizado framework React como tech principal com o auxilio do axios para a utilização de algumas funçoes para melhor funcionamento da pagina como a listada abaixo:
+
+  static getMovies(){
+        return axios(withBaseUrl("movie/popular"));
+    }
+
+    static getMoviesDetails(id){
+        return axios(withBaseUrl(`movie/${id}`));
+    }
+
+    static searchMovie(movie){
+        return axios(withBaseUrl("search/movie")+ `&query=${movie}`)
+    }
+}   
+
+
+## Estilização
+
+Para estilização foi utilizado Sass pela sua facilidade e eficiência no codigo devido a possibilidade de aninhamento
+
+
+.MovieCard{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    min-height: 605px;
+
+    &:hover{
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+        transform: translateY(-5px);
+    }
+
+    .movie-image{
+        position: relative;
+        background-color: #303030;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.6) 0%,
+                rgba(0, 0, 0, 0.2)100%
+            );
+        }
+    }
+
+    .movie-description{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #1d1d1d;
+        padding: 15px;
+
+        h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .btn-details{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 24px;
+            color: white;
+            background-color: #0c70f2;
+            border-radius: 5px;
+            text-decoration: none;
+
+            &:hover{
+                background-color: #303030;
+            }
+        }
+    }
+}
