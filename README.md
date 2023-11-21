@@ -29,6 +29,7 @@ MovieList criada com intuito de aperfeiçoar a técnica de consumo de API, foi u
 
 Para estilização foi utilizado Sass pela sua facilidade e eficiência no codigo devido a possibilidade de aninhamento
 
+
 .MovieCard{
     position: relative;
     overflow: hidden;
