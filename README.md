@@ -11,10 +11,7 @@
 
 MovieList criada com intuito de aperfeiçoar a técnica de consumo de API, foi utilizado framework React como tech principal com o auxilio do axios para a utilização de algumas funçoes para melhor funcionamento da pagina como a listada abaixo:
 
-  static getMovies(){
-        return axios(withBaseUrl("movie/popular"));
-    }
-
+ 
     static getMoviesDetails(id){
         return axios(withBaseUrl(`movie/${id}`));
     }
@@ -30,13 +27,6 @@ MovieList criada com intuito de aperfeiçoar a técnica de consumo de API, foi u
 Para estilização foi utilizado Sass pela sua facilidade e eficiência no codigo devido a possibilidade de aninhamento
 
 
-.MovieCard{
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    min-height: 605px;
 
     &:hover{
         box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
