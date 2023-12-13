@@ -7,6 +7,9 @@
 - Sass
 - JavaScript
 
+## Site
+movielistdnc.vercel.app
+
 ## Resumo
 
 MovieList criada com intuito de aperfeiçoar a técnica de consumo de API, foi utilizado framework React como tech principal com o auxilio do axios para a utilização de algumas funçoes para melhor funcionamento da pagina como a listada abaixo:
@@ -88,3 +91,8 @@ Para estilização foi utilizado Sass pela sua facilidade e eficiência no codig
         }
     }
 }
+
+## Print do Projeto
+
+![image](https://github.com/devcarlosrlima/MovieList/assets/136191341/341e5e98-f1f2-4660-8dca-1f70575f998e)
+
