@@ -4,7 +4,7 @@
 - React js
 - API
 - Axios
-- Sass
+- Scss
 - JavaScript
 
 ## Site
