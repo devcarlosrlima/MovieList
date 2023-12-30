@@ -12,7 +12,7 @@ movielistdnc.vercel.app
 
 ## Resumo
 
-MovieList criada com intuito de aperfeiçoar a técnica de consumo de API, foi utilizado framework React como tech principal com o auxilio do axios para a utilização de algumas funçoes para melhor funcionamento da pagina como a listada abaixo:
+MovieList criada com intuito de aperfeiçoar a técnica de consumo de API, é uma site que lista quase todos os filmes lançados e passa algumas informações dos mesmo, foi utilizado framework React como tech principal com o auxilio do axios para a utilização de algumas funçoes para melhor funcionamento da pagina como a listada abaixo:
 
  
     static getMoviesDetails(id){
